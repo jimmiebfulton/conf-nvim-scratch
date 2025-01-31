@@ -1,5 +1,17 @@
 return {
-  -- file explorer
+  -- Snacks explorer
+  {
+    "snacks.nvim",
+    opts = {
+      explorer = { enabled = false },
+    },
+    -- stylua: ignore
+    keys = {
+      { "<leader>fe",  function() Snacks.picker.explorer() end, desc = "File Explorer" },
+      { "<leader>S",  function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" },
+      { "<leader>dps", function() Snacks.profiler.scratch() end, desc = "Profiler Scratch Buffer" },
+    },
+  },
   {
     "nvim-neo-tree/neo-tree.nvim",
     cmd = "Neotree",

@@ -16,6 +16,7 @@ return {
     opts = {
       bigfile = { enabled = true },
       quickfile = { enabled = true },
+      explorer = { enabled = true },
       terminal = {
         win = {
           position = "float",
