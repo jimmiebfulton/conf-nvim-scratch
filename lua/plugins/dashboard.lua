@@ -1,8 +1,8 @@
 return {
   {
     "snacks.nvim",
-    dependencies = {
-      "MaximilianLloyd/ascii.nvim",
+    keys = {
+      { mode = { "n" }, "<leader>D", function() Snacks.dashboard() end, desc = "Dashboard" },
     },
     opts = {
       dashboard = {
