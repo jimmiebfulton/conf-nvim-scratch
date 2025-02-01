@@ -3,7 +3,7 @@ return {
   {
     "snacks.nvim",
     opts = {
-      explorer = { enabled = false },
+      explorer = {},
     },
     -- stylua: ignore
     keys = {
