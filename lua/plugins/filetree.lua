@@ -7,9 +7,7 @@ return {
     },
     -- stylua: ignore
     keys = {
-      { "<leader>fe",  function() Snacks.picker.explorer() end, desc = "File Explorer" },
-      { "<leader>S",  function() Snacks.scratch.select() end, desc = "Select Scratch Buffer" },
-      { "<leader>dps", function() Snacks.profiler.scratch() end, desc = "Profiler Scratch Buffer" },
+      { "<leader>fs",  function() Snacks.picker.explorer() end, desc = "File Explorer" },
     },
   },
   {
