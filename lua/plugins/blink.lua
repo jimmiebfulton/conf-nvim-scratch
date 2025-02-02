@@ -9,7 +9,6 @@ return {
   {
     "saghen/blink.cmp",
     version = '*',
-    -- build = 'cargo +nightly build --release',
     opts_extend = {
       "sources.completion.enabled_providers",
       "sources.compat",
@@ -22,7 +21,7 @@ return {
         "saghen/blink.compat",
         optional = true, -- make optional so it's only enabled if any extras need it
         opts = {},
-        version = not vim.g.lazyvim_blink_main and "*",
+        version = "*",
       },
     },
     event = "InsertEnter",
@@ -63,10 +62,15 @@ return {
         ghost_text = {
           enabled = vim.g.ai_cmp,
         },
+        list = {
+          selection = {
+            preselect = function(ctx) return not require('blink.cmp').snippet_active({ direction = 1 }) end,
+          },
+        },
       },
 
       -- experimental signature help support
-      -- signature = { enabled = true },
+      signature = { enabled = true },
 
       sources = {
         -- adding any nvim-cmp sources here will enable them
@@ -79,6 +83,9 @@ return {
       keymap = {
         preset = "super-tab",
         ["<CR>"] = { "accept", "fallback" },
+        cmdline = {
+            preset = 'default',
+          }
       },
     },
     ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
