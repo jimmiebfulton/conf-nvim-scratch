@@ -10,14 +10,13 @@ return {
         "<leader>fy",
         mode = { "n", "v" },
         "<cmd>Yazi<cr>",
-        desc = "Open Yazi (cwd)",
+        desc = "Open Yazi",
       },
       {
-        -- NOTE: this requires a version of yazi that includes
-        -- https://github.com/sxyazi/yazi/pull/1305 from 2024-07-18
         "<leader>fY",
-        "<cmd>Yazi toggle<cr>",
-        desc = "Resume Yazi",
+        mode = { "n", "v" },
+        "<cmd>Yazi cwd<cr>",
+        desc = "Open Yazi (cwd)",
       },
     },
     ---@type YaziConfig
@@ -25,6 +24,7 @@ return {
       -- if you want to open yazi instead of netrw, see below for more info
       open_for_directories = true,
       open_multiple_tabs = true,
+      yazi_floating_window_winblend = 5,
       keymaps = {
         show_help = "<f1>",
         cycle_open_buffers = "<tab>",
