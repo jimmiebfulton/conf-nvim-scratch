@@ -42,6 +42,8 @@ return {
           },
           -- better descriptions
           { "gx", desc = "Open with system app" },
+          { "]<space>", "o<esc>" },
+          { "[<space>", "O<esc>" },
         },
       },
     },
