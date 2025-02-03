@@ -8,10 +8,10 @@ return {
     cmd = "Grapple",
     keys = {
         { "<leader>m", desc = "Grapple" },
-        { "<leader>mm", "<cmd>Grapple toggle<cr>", desc = "Grapple toggle tag" },
-        { "<leader>mM", "<cmd>Grapple toggle_tags<cr>", desc = "Grapple open tags window" },
-        { "<leader>mn", "<cmd>Grapple cycle_tags next<cr>", desc = "Grapple cycle next tag" },
-        { "<leader>mp", "<cmd>Grapple cycle_tags prev<cr>", desc = "Grapple cycle previous tag" },
+        { "<leader>mm", "<cmd>Grapple toggle<cr>", desc = "Grapple Toggle Tag" },
+        { "<leader>mM", "<cmd>Grapple toggle_tags<cr>", desc = "Grapple Open Tags" },
+        { "<leader>mn", "<cmd>Grapple cycle_tags next<cr>", desc = "Grapple Next Tag" },
+        { "<leader>mp", "<cmd>Grapple cycle_tags prev<cr>", desc = "Grapple Prev Tag" },
     },
 },
 }
