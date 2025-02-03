@@ -1,14 +1,5 @@
 return {
 
-  { 
-    "nvim-tree/nvim-web-devicons", 
-    opts = {},
-    config = function(_, opts)
-      print("Loading nvim-web-devicons")
-      require("nvim-web-devicons").setup(opts)
-    end,
-  },
-
   -- icons
   {
     "echasnovski/mini.icons",
