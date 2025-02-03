@@ -3,7 +3,7 @@ return {
     lazy = false,
     version = "*", -- or branch = "dev", to use the latest commit
     keys = {
-      { mode = { "n"}, "<leader>uR", "<cmd>Screenkey toggle<CR>" },
+      { mode = { "n"}, "<leader>uK", "<cmd>Screenkey toggle<CR>" },
     }, 
   },
 }
