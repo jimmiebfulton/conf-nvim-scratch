@@ -9,10 +9,13 @@ return {
       { "<leader>:",  function() Snacks.picker.command_history() end, desc = "Command History" },
       { "<leader>,",  function() Snacks.picker.buffers() end, desc = "Buffers" },
 
+      { "<leader>e",  "<leader>fe", desc = "Explorer" },
+      { "<leader>E",  "<leader>fE", desc = "Explorer Sidebar" },
+
       -- Find
       { "<leader>fb",  function() Snacks.picker.buffers() end, desc = "Buffers" },
-      { "<leader>fE", function() Snacks.picker.explorer() end, desc = "Explorer" },
       { "<leader>fe", function() Snacks.picker.explorer({ layout = "default", auto_close = true }) end, desc = "Explorer" },
+      { "<leader>fE", function() Snacks.picker.explorer() end, desc = "Explorer Sidebar" },
       { "<leader>ff", function() Snacks.picker.files() end, desc = "Files" },
       { "<leader>fc", desc = "Config" },
       { "<leader>fcc", function() Snacks.picker.files({ dirs = { "~/.config/", }}) end, desc = "Neovim" },
@@ -53,6 +56,8 @@ return {
       -- Git
       { "<leader>gc",  function() Snacks.picker.git_log() end, desc = "Commits" },
       { "<leader>gd",  function() Snacks.picker.git_diff() end, desc = "Diffs" },
+      { "<leader>gf",  function() Snacks.picker.git_log_file() end, desc = "File Commits" },
+      { "<leader>gl",  function() Snacks.picker.git_log_line() end, desc = "Line Commits" },
       { "<leader>gs",  function() Snacks.picker.git_status() end, desc = "Status" },
 
       -- UI 
