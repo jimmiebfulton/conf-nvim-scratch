@@ -21,7 +21,7 @@ return {
       { "<leader>fE", function() Snacks.picker.explorer() end, desc = "Explorer Sidebar" },
       { "<leader>ff", function() Snacks.picker.files() end, desc = "Files" },
       { "<leader>fc", desc = "Config" },
-      { "<leader>fcc", function() Snacks.picker.files({ dirs = { "~/.config/", }}) end, desc = "Neovim" },
+      { "<leader>fcc", function() Snacks.picker.files({ dirs = { "~/.config/", }}) end, desc = "Config" },
       { "<leader>fcn", function() Snacks.picker.files({ dirs = { "~/.config/nvim/", }}) end, desc = "Neovim" },
       { "<leader>fcf", function() Snacks.picker.files({ dirs = { "~/.config/fish/", }}) end, desc = "Fish" },
       { "<leader>fcy", function() Snacks.picker.files({ dirs = { "~/.config/yazi/", }}) end, desc = "Yazi" },
