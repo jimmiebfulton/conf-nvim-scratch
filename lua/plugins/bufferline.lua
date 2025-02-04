@@ -30,10 +30,12 @@ return {
         end,
         offsets = {
           {
-            filetype = "neo-tree",
-            text = "Neo-tree",
+            // TODO: Figure this out
+            filetype = "snacks_picker",
+            text = "Explorer ",
             highlight = "Directory",
-            text_align = "left",
+            separator = true,
+            -- text_align = "left",
           },
         },
         ---@param opts bufferline.IconFetcherOpts
