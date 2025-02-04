@@ -30,7 +30,7 @@ return {
         end,
         offsets = {
           {
-            // TODO: Figure this out
+            -- TODO: Figure this out
             filetype = "snacks_picker",
             text = "Explorer ",
             highlight = "Directory",
