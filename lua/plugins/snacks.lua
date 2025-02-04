@@ -1,6 +1,6 @@
 return {
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     opts = {
       explorer = {
         replace_netrw = false,
@@ -48,6 +48,7 @@ return {
       { "<leader>sL",  function() Snacks.picker.lines() end, desc = "Lines" },
       { "<leader>sm",  function() Snacks.picker.marks() end, desc = "Marks" },
       { "<leader>sM",  function() Snacks.picker.man() end, desc = "Man Pages" },
+      { "<leader>snm", function() Snacks.picker.notifications() end, desc = "Messages" },
       { "<leader>sp",  function() Snacks.picker.pick() end, desc = "Pickers" },
       { "<leader>sP",  function() Snacks.picker.picker_layouts() end, desc = "Picker Layouts" },
       { "<leader>sr",  function() Snacks.picker.resume() end, desc = "Resume" },

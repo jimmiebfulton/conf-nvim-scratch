@@ -1,6 +1,6 @@
 return {
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     keys = {
       { mode = { "n" }, "<leader>D", function() Snacks.dashboard() end, desc = "Dashboard" },
     },

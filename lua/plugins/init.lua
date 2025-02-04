@@ -35,7 +35,7 @@ return {
   { "MunifTanjim/nui.nvim", lazy = true },
 
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     opts = {
       indent = { enabled = true },
       input = { enabled = true },

@@ -1,7 +1,7 @@
 return {
   -- Snacks utils
   {
-    "snacks.nvim",
+    "folke/snacks.nvim",
     -- stylua: ignore
     keys = {
       { "<leader>.",  function() Snacks.scratch() end, desc = "Toggle Scratch Buffer" },
