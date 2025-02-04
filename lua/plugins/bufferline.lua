@@ -31,8 +31,8 @@ return {
         offsets = {
           {
             -- TODO: Figure this out
-            filetype = "snacks_picker",
-            text = "Explorer ",
+            filetype = "snacks_picker_list",
+            text = "Explorer",
             highlight = "Directory",
             separator = true,
             -- text_align = "left",
