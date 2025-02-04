@@ -45,6 +45,7 @@ return {
       { "<leader>sj",  function() Snacks.picker.jumps() end, desc = "Jumps" },
       { "<leader>sk",  function() Snacks.picker.keymaps() end, desc = "Keys" },
       { "<leader>sl",  function() Snacks.picker.loclist() end, desc = "Location List" },
+      { "<leader>sL",  function() Snacks.picker.lines() end, desc = "Lines" },
       { "<leader>sm",  function() Snacks.picker.marks() end, desc = "Marks" },
       { "<leader>sM",  function() Snacks.picker.man() end, desc = "Man Pages" },
       { "<leader>sp",  function() Snacks.picker.pick() end, desc = "Pickers" },
