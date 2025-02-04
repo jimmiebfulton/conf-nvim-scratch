@@ -1,5 +1,13 @@
 return {
 
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      -- colorscheme = "onedark",
+      colorscheme = "catppuccin-macchiato",
+    },
+  },
+
   { "ellisonleao/gruvbox.nvim",
     lazy = true,
   },
@@ -12,9 +20,11 @@ return {
   },
 
   {
-    "LazyVim/LazyVim",
+    'navarasu/onedark.nvim',
+    lazy = true,
     opts = {
-      colorscheme = "catppuccin-macchiato",
+      -- 'dark', 'darker', 'cool', 'deep', 'warm', 'warmer' and 'light'
+      style = "light"
     },
   },
 
