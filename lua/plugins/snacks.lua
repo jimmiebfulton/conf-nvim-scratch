@@ -49,12 +49,14 @@ return {
       { "<leader>sm",  function() Snacks.picker.marks() end, desc = "Marks" },
       { "<leader>sM",  function() Snacks.picker.man() end, desc = "Man Pages" },
       { "<leader>sp",  function() Snacks.picker.pick() end, desc = "Pickers" },
+      { "<leader>sP",  function() Snacks.picker.picker_layouts() end, desc = "Picker Layouts" },
       { "<leader>sr",  function() Snacks.picker.resume() end, desc = "Resume" },
       { "<leader>sq",  function() Snacks.picker.qflist() end, desc = "Quickfix List" },
       { "<leader>su",  function() Snacks.picker.undo() end, desc = "Undo" },
       { "<leader>sw",  function() Snacks.picker.grep_word() end, desc = "Grep Word" },
       { "<leader>sw",  function() Snacks.picker.grep_word() end, mode = "v", desc = "Grep Word" },
       { "<leader>sz",  function() Snacks.picker.zoxide() end, desc = "Zoxide" },
+      { "<leader>sZ",  function() Snacks.picker.lazy() end, desc = "Lazy" },
       { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart" },
 
       -- Git
