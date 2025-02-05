@@ -5,10 +5,10 @@ vim.g.lazyvim_picker = "fzf"
 
 ---@type LazyPicker
 local picker = {
-  name = "fzf",
-  commands = {
-    files = "files",
-  },
+	name = "fzf",
+	commands = {
+		files = "files",
+	},
 
   ---@param command string
   ---@param opts? FzfLuaOpts

@@ -1,11 +1,11 @@
 return {
-  {
-    "folke/snacks.nvim",
-    opts = {
-      explorer = {
-        replace_netrw = false,
-      },
-    },
+	{
+		"folke/snacks.nvim",
+		opts = {
+			explorer = {
+				replace_netrw = false,
+			},
+		},
     -- stylua: ignore
     keys = {
       { "<leader>/",  function() Snacks.picker.grep() end, desc = "Grep" },
@@ -51,8 +51,10 @@ return {
       { "<leader>snm", function() Snacks.picker.notifications() end, desc = "Messages" },
       { "<leader>sp",  function() Snacks.picker.pick() end, desc = "Pickers" },
       { "<leader>sP",  function() Snacks.picker.picker_layouts() end, desc = "Picker Layouts" },
-      { "<leader>sr",  function() Snacks.picker.resume() end, desc = "Resume" },
       { "<leader>sq",  function() Snacks.picker.qflist() end, desc = "Quickfix List" },
+      { "<leader>sr",  function() Snacks.picker.resume() end, desc = "Resume" },
+      { "<leader>ss",  function() Snacks.picker.lsp_symbols() end, desc = "Sympols" },
+      { "<leader>sS",  function() Snacks.picker.lsp_workspace_symbols() end, desc = "Project Sympols" },
       { "<leader>su",  function() Snacks.picker.undo() end, desc = "Undo" },
       { "<leader>sw",  function() Snacks.picker.grep_word() end, desc = "Grep Word" },
       { "<leader>sw",  function() Snacks.picker.grep_word() end, mode = "v", desc = "Grep Word" },
@@ -70,5 +72,20 @@ return {
       -- UI 
       { "<leader>uC",  function() Snacks.picker.colorschemes() end, desc = "Color Schemes" },
     },
-  },
+	},
+
+	{
+		"neovim/nvim-lspconfig",
+		optional = true,
+		opts = function()
+			local Keys = require("lazyvim.plugins.lsp.keymaps").get()
+      -- stylua: ignore
+      vim.list_extend(Keys, {
+        { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition", has = "definition" },
+        { "gr", function() Snacks.picker.lsp_references() end, desc = "References", nowait = true },
+        { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
+        { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
+      })
+		end,
+	},
 }
